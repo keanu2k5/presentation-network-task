@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Noto Sans Display Variable';
+  font-style: normal;
+  font-display: swap;
+  src: url(NotoSansDisplay-VariableFont_wdth,wght.woff2) format('woff2'), url(NotoSansDisplay-VariableFont_wdth,wght.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Noto Sans Display Variable';
+  font-style: italic;
+  font-display: swap;
+  src: url(NotoSansDisplay-Italic-VariableFont_wdth,wght.woff2) format('woff2'), url(NotoSansDisplay-Italic-VariableFont_wdth,wght.ttf) format('truetype');
+}
