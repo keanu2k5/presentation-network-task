@@ -9,15 +9,126 @@
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/brienz.css">
-
-		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.image-row {
+				display: inline-block;   /* Make images inline to each other */
+				text-align: center;      /* Center the container content */
+				width: 100%;             /* Ensure the container takes up full width */
+			}
+	
+			.image-row img {
+				width: 45%;              /* Each image takes 45% of the container width */
+				margin-left: 0.5%;       /* Margin between the two images (for spacing) */
+				margin-right: 2.5%; 
+				margin-top: 2.5%;     /* Even out the margins */
+				vertical-align: right;  /* Ensures images align vertically in the middle */
+			}
+		</style>
+		
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<h2>Mein Projekt</h2>
+                <img
+                    class="Image_Plan"
+                    src="assets/Slide_1/Startbild.png"
+                    width="850px"
+                    height="400px"
+                    onclick="openFullscreen(this)" /> <!-- Call the fullscreen function on click -->
+                <p style="margin-top: 0px;" class="fragment fade-in">
+                    - Raumkonzept erstellt
+                </p>
+                <p class="fragment fade-in">
+                    - Umgebung bereitgestellt und geplant
+                </p>
+            </section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<section>
+						<p>
+							<a href="https://netbox.brienznet.ch/dcim/sites/33/" target="_blank" data-prevent-swipe>Klicke hier für mehr Infos</a>
+						</p>
+						<style>
+							a {
+							  pointer-events: auto !important;
+							}
+						  </style>
+						<p style="margin-top: 20px; margin-bottom: 10px;">
+							Dokumentierte Accespoints & Geräte
+						</p>
+						<img
+						id="fullscreenImage"
+						src=assets/Slide_1/Accespoints.png
+						width="1000px"
+						height="480px"
+						onclick="openFullscreen(this)"
+						class="r-stretch" src="assets/Slide_1/Accespoints.png" />
+					</section>
+				
+					<section>
+						<p>
+							<a href="https://netbox.brienznet.ch/dcim/sites/33/" target="_blank" data-prevent-swipe>Klicke hier für mehr Infos</a>
+						</p>
+						<style>
+							a {
+							  pointer-events: auto !important;
+							}
+						  </style>
+						<img 
+						style="margin-top: 75px;"
+						id="fullscreenImage"
+						class="fragment fade-right"
+						onclick="openFullscreen(this)"
+						src=assets/Slide_1/Devices_AP.png
+						class="r-stretch" src="assets/Slide_1/Devices_AP.png"/>
+					</section>
+
+					<section>
+						<p>
+							<a href="https://netbox.brienznet.ch/dcim/sites/33/" target="_blank" data-prevent-swipe>Klicke hier für mehr Infos</a>
+						</p>
+						<style>
+							a {
+							  pointer-events: auto !important;
+							}
+						  </style>
+						<img 
+						style="margin-top: 75px;"
+						class="fragment fade-right"
+						id="fullscreenImage"
+						onclick="openFullscreen(this)"
+						src=assets/Slide_1/Interface_AP.png
+						class="r-stretch" src="assets/Interface_AP/.png"/>
+					</section>
+				</section>
+
+				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+					<section>
+						<p>
+							
+						</p>
+					
+					</section>
+					<section></section>
+					<h3>Aufbau der Racks</h3>
+					<div class="image-row">
+						<!-- First image -->
+						<img
+							src="assets/Slide_1/rack_1.png"
+							alt="Devices AP"
+							onclick="openFullscreen(this)" />
+						
+						<!-- Second image -->
+						<img
+							src="assets/Slide_1/rack_2.png"
+							alt="Interface AP"
+							onclick="openFullscreen(this)" />
+				</section>
+
 			</div>
 		</div>
 
@@ -26,15 +137,24 @@
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
 		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+			  Reveal.initialize({
+            hash: true,
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+        });
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
+        // Fullscreen function
+        function openFullscreen(img) {
+            // Check if the document is in fullscreen mode
+            if (img.requestFullscreen) {
+                img.requestFullscreen();
+            } else if (img.mozRequestFullScreen) { // Firefox
+                img.mozRequestFullScreen();
+            } else if (img.webkitRequestFullscreen) { // Chrome, Safari, and Opera
+                img.webkitRequestFullscreen();
+            } else if (img.msRequestFullscreen) { // IE/Edge
+                img.msRequestFullscreen();
+            }
+        }
 		</script>
 	</body>
 </html>
