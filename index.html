@@ -5,156 +5,356 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>reveal.js</title>
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- styles -->
+<!-- ---------------------------------------------------------------------------------------- -->
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/brienz.css">
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-
-		<style>
-			.image-row {
-				display: inline-block;   /* Make images inline to each other */
-				text-align: center;      /* Center the container content */
-				width: 100%;             /* Ensure the container takes up full width */
-			}
-	
-			.image-row img {
-				width: 45%;              /* Each image takes 45% of the container width */
-				margin-left: 0.5%;       /* Margin between the two images (for spacing) */
-				margin-right: 2.5%; 
-				margin-top: 2.5%;     /* Even out the margins */
-				vertical-align: right;  /* Ensures images align vertically in the middle */
-			}
-		</style>
 		
 	</head>
 	<body>
+
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- reveal start -->
+<!-- ---------------------------------------------------------------------------------------- -->
+
 		<div class="reveal">
 			<div class="slides">
-				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
-					<h2>Mein Projekt</h2>
-                <img
-                    class="Image_Plan"
-                    src="assets/Slide_1/Startbild.png"
-                    width="850px"
-                    height="400px"
-                    onclick="openFullscreen(this)" /> <!-- Call the fullscreen function on click -->
-                <p style="margin-top: 0px;" class="fragment fade-in">
-                    - Raumkonzept erstellt
-                </p>
-                <p class="fragment fade-in">
-                    - Umgebung bereitgestellt und geplant
-                </p>
-            </section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
-					<section>
-						<p>
-							<a href="https://netbox.brienznet.ch/dcim/sites/33/" target="_blank" data-prevent-swipe>Klicke hier für mehr Infos</a>
-						</p>
-						<style>
-							a {
-							  pointer-events: auto !important;
-							}
-						  </style>
-						<p style="margin-top: 20px; margin-bottom: 10px;">
-							Dokumentierte Accespoints & Geräte
-						</p>
-						<img
-						id="fullscreenImage"
-						src=assets/Slide_1/Accespoints.png
-						width="1000px"
-						height="480px"
-						onclick="openFullscreen(this)"
-						class="r-stretch" src="assets/Slide_1/Accespoints.png" />
-					</section>
-				
-					<section>
-						<p>
-							<a href="https://netbox.brienznet.ch/dcim/sites/33/" target="_blank" data-prevent-swipe>Klicke hier für mehr Infos</a>
-						</p>
-						<style>
-							a {
-							  pointer-events: auto !important;
-							}
-						  </style>
-						<img 
-						style="margin-top: 75px;"
-						id="fullscreenImage"
-						class="fragment fade-right"
-						onclick="openFullscreen(this)"
-						src=assets/Slide_1/Devices_AP.png
-						class="r-stretch" src="assets/Slide_1/Devices_AP.png"/>
-					</section>
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Keanu's Mega Tower - Network -->
+<!-- ---------------------------------------------------------------------------------------- -->
+	<section data-background-image="assets/Hintergrund.png">
+		<h2>Keanu's Mega Tower - Network</h2>
+		<aside class="notes">
+			Start: 00:00:00<br />
+			End: 00:01:00<br />
+			<br />
+			Herzlich Willkommen zu meiner Präsentation über Keanus Mega Tower Network
+			
+		</aside>
+	</section>
 
-					<section>
-						<p>
-							<a href="https://netbox.brienznet.ch/dcim/sites/33/" target="_blank" data-prevent-swipe>Klicke hier für mehr Infos</a>
-						</p>
-						<style>
-							a {
-							  pointer-events: auto !important;
-							}
-						  </style>
-						<img 
-						style="margin-top: 75px;"
-						class="fragment fade-right"
-						id="fullscreenImage"
-						onclick="openFullscreen(this)"
-						src=assets/Slide_1/Interface_AP.png
-						class="r-stretch" src="assets/Interface_AP/.png"/>
-					</section>
-				</section>
+	<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Übersicht über das Projekt -->
+<!-- ---------------------------------------------------------------------------------------- -->
+<section data-background-gradient="radial-gradient(#283b95, #17b2c3)">
+    <h2 style="font-size: 55px;">Übersicht über das Projekt</h2>
+    <aside class="notes">
+        Start: 00:01:00<br />
+        End: 00:02:30<br />
+        <br />
+    </aside>
+    
+    <!-- sub slide 1 -->
+    <section>
+        <h3>Erklärung</h3>
+        <aside class="notes">
+            Start: 00:02:30<br />
+            End: 00:03:30<br />
+			<br />
+			- Netzwerk eingerichtet basierend auf Bauplan.<br />
+			- Selbst erstelltes Namenskonzept für Räume und deren Geräte erstellt.<br />
+			- minimal 1 Outlet-Dose mit zwei Steckplätzen pro Raum installiert werde,  wen mehr nötig wären wie für z.b ein Wohnzimmer dann mehr einbauen.<br />
+			- Dokumentation im Netbox (Gerätepositionen, IPs).<br />
+			- Ich habe in meiner Umgebung Zwei Racks mit Switches, Patchpanels und Routers.<br />
+			- Alle Geräte verbunden, Internetzugang gewährleistet.
+        </aside>
+    </section>
+    
+    <!-- sub slide 2 -->
+    <section>
+        <h3 style="margin-top:10%;">Ziel des Projekts</h3>
+        <img src="assets/Ziel.png" class="fragment fade-up">
+        <aside class="notes">
+            Start: 00:03:30<br />
+            End: 00:04:30<br />
+            <br />
+            - Funktionsfähiges Netzwerk für alle Räume.<br />
+            - Fokus auf Internetverbindung und Dokumentation.<br />
+			- Programme kennenlernen und ein tieferes verständniss für das was ich überhaupt mache zu bekommen.<br />
+        </aside>
+    </section>
+</section>
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Verwendete Geräte -->
+<!-- ---------------------------------------------------------------------------------------- -->
+	<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+		<h2 style="font-size: 45px;">Verwendete Geräte</h2>
+		<aside class="notes">
+			Start: 00:00:00<br />
+			End: 00:01:00<br />
+			<br />
+		</aside>
+		<!-- sub slide 1 -->
+		<section><img src="assets/accespoint.png"class="fragment fade-up">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				Ich habe die Ubiquiti UniFi UAP-AC-M-PRO Access Points verwendet, um eine flächendeckende und stabile WLAN-Abdeckung zu gewährleisten. Diese Accesspoints sind für Innen- und Außeneinsatz geeignet<br />
+				<br />
+				Technische Details:<br />
+				<br />
+				Dual-Band: Unterstützt 2,4 GHz als auch 5 GHz Frequenzbänder für bessere Lastverteilung und schnellere Verbindungen<br />
+				<br />
+				Max. Datenrate: Bis zu 1300 Mbit/s
+				<br />
+				Reichweite: 183 Meter
+				<br />
+			</aside>
+		</section>
+		<!-- sub slide 2 -->
+		<section><img src="assets/Switch.png"class="fragment fade-up" style="width: 600px;">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				Der Ubiquiti USW-Pro-48-POE ist ein leistungsstarker, Layer-2-Switch mit umfangreichen Power-over-Ethernet (PoE) Funktionen, der sich ideal für den Einsatz in mittelgroßen bis großen Netzwerken eignet.
+				<br />
+				Technische Details:<br />
+				<br />
+				48 Gigabit-Ethernet-Ports: Ideal für den Anschluss vieler Geräte.<br />
+				<br/>
+				40 PoE+ Ports: Liefert bis zu 30Watt pro Port, um Access Points, Kameras und andere Geräte mit Strom zu versorgen.<br />
+				<br />
+				8 PoE++ Ports: Unterstützt Geräte mit höherem Strombedarf (bis zu 60Watt).<br />
+				<br />
+				2 SFP+ Ports: 10 Gigabit pro Sekunde für Glasfaser-Uplinks oder Verbindungen zu anderen Switches.<br />
+				<br />
+				Lüfterloses Design: Leise Kühlung im Betrieb.<br />
+				<br />
+			</aside>
+		</section>
+		<!-- sub slide 3 -->
+		<section><img src="assets/patchpanel.png"class="fragment fade-up">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				Das Dätwyler Patchpanel 24 Port ist ein hochwertiges Patchpanel, häufig in Serverräumen oder Rechenzentren verwendet, um Netzwerkkabel sauber zu organisieren und Verbindungen zu Switches oder anderen Netzwerkgeräten herzustellen. Alternative Patchbox.<br />
+				<br />
+				Technische Details:<br />
+				<br />
+				24 Ports: Unterstützt bis zu 24 Netzwerkverbindungen.<br />
+				<br/>
+				Kompatibilität: Geeignet für CAT5e, CAT6 oder CAT6a Kupferkabel.<br />
+				<br />
+				19-Zoll-Rackmontage, ist = die Standardgröße für eine einfache Installation in Racks.<br />
+				<br />
+				Das Robuste Metallgehäuse, bietet Langlebigkeit und Stabilität.<br/>
+				<br />
+			</aside>
+		</section>
+		<!-- sub slide 4 -->
+		<section><img src="assets/Firewall.png"class="fragment fade-up" style="width: 600px;">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				Die Ubiquiti UniFi Dream Machine Pro (UDM-Pro) ist eine leistungsstarke All-in-One-Netzwerklösung für mittelgroße bis große Netzwerke, die als Router, Switch, Firewall und Controller dient.<br />
+				<br />
+				Technische Details:<br />
+				<br />
+				8-Port Switch: 8 Gigabit-Ethernet-Ports mit Layer-3-Funktionalität.<br />
+				<br/>
+				WAN-Konnektivität:<br />
+				<br />
+				UniFi Controller: Zentrale Verwaltung von Geräten<br />
+				<br />
+				VPN: Unterstützt Site-to-Site und Remote Access VPNs.
+				<br />
+			</aside>
+		</section>
+	</section>
 
-				<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
-					<section>
-						<p>
-							
-						</p>
-					
-					</section>
-					<section></section>
-					<h3>Aufbau der Racks</h3>
-					<div class="image-row">
-						<!-- First image -->
-						<img
-							src="assets/Slide_1/rack_1.png"
-							alt="Devices AP"
-							onclick="openFullscreen(this)" />
-						
-						<!-- Second image -->
-						<img
-							src="assets/Slide_1/rack_2.png"
-							alt="Interface AP"
-							onclick="openFullscreen(this)" />
-				</section>
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Racks -->
+<!-- ---------------------------------------------------------------------------------------- -->
+	<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+		<h2 style="font-size: 45px;">Racks</h2>
+		<aside class="notes">
+			Start: 00:00:00<br />
+			End: 00:01:00<br />
+			<br />
+		</aside>
+		<!-- sub slide 1 -->
+		<section><img src="assets/Rack1.svg" class="fragment fade-right">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				Blindblende = Funktion: Abdeckung ungenutzter Einbauplätze im 19-Zoll-Rack.
+				<br />
+				KEV (Kabelendverschluss) = Funktion: Abschließen und Schützen von Glasfaser- oder Kupferkabeln.
+				<br />
+				LWL (Lichtwellenleiter) = Funktion: Glasfaserkabel zur Datenübertragung mittels Lichtsignalen.
+				<br />
+				Switch = Funktion: Netzwerkknoten zur Verbindung mehrerer Geräte im selben Netzwerk.
+				<br />
+				Firewall = Funktion: Schutz des Netzwerks durch Überwachung und Filterung des Datenverkehrs.
+				<br />
+				PDU (Power Distribution Unit) = Funktion: Verteilt elektrische Energie in Racks oder Schaltschränken.
+				<br />
+				KB (Kabelbinder) = Funktion: Fixierung und Bündelung von Kabeln zur Ordnung und Strukturierung.
+				<br />
+			</aside>
+		</section>
+	</section>
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Netbox Dokumentation -->
+<!-- ---------------------------------------------------------------------------------------- -->
+	<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+		<h2 style="font-size: 45px;">Netbox Dokumentation</h2>
+		<aside class="notes">
+			Start: 00:00:00<br />
+			End: 00:01:00<br />
+			<br />
+		</aside>
+		<!-- sub slide 1 -->
+		<section>
+			<img src="assets/Netbox Side.png">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				- Sites<br />
+					- Erstellen.
+					- Hauptseite, alles andere kommt dannach.
+				- Devices<br />
+					- Erstellen.
+					- Zuweisen (IP, Location).
+					- Verbinden per Kabel (z.b Accesspoint zu Switch).
+				<br />
+				- Locations<br />
+					- Erstellen anhand von Bauplan Raumkonzept (z.b Stockwerk 2, Raumnummer 4 = 204).
+					- Wen mehrere Geräte dann 204.01, 204.02 usw.
+					- Locations werden dann übersichlich sein.
+				- Racks<br />
+					- Erstellen eigener Racks inkl Geräte.
+					- Main Rack?.
+			</aside>
+		</section>
+	</section>
 
-			</div>
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Wlan und Subneting -->
+<!-- ---------------------------------------------------------------------------------------- -->
+	<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+		<h2 style="font-size: 45px;">Wlan und Subnetting</h2>
+		<!-- sub slide 1 -->
+		<section><img src="assets/WLAN.png"style="width: 300px;" class="fragment fade-right">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				WLANS:
+				<br />
+					- 8 Virtuelle Lans = (WLANS).<br />
+					- Alle in eine WLAN Gruppe hinzugefügt.<br />
+					- Gruppe führt zu Keanus Mega Tower Site.<br />
+					- Pro Apartment 1 WLAN inkl Subnetting.<br />
+			</aside>
+		</section>
+		<!-- sub slide 1 -->
+		<section><img src="assets/Gebäude_WLAN.png">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				Subnetting (Netz):
+				<br />
+					- Erstes gebrauchtes WLAN (Gebäude_WLAN) 172.31.0.0/20<br />
+					- Überlegung dabei<br />
+					- 20er Subnet<br />
+					- 8 Aufgeteilte WLANS<br />
+					- IP Konzept erklären<br />
+					- Die nächsten WLANS würde dann so aussehen 172.31.16.0/20, 172.31.32.0/20, 172.31.48.0/20 usw.<br/>
+			</aside>
+		</section>
+	</section>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Verkabelung -->
+<!-- ---------------------------------------------------------------------------------------- -->
+	<section data-background-gradient="radial-gradient(#283b95, #17b2c3)">
+		<h2 style="font-size: 45px;">Verkabelung</h2>
+		<!-- sub slide 1 -->
+		<section><img src="assets/Cable.png"style="width: 300px;" class="fragment fade-right">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				Verkabelung:
+					- Baum Topologie <br />
+					- Switches verkabeln mit Router.<br />
+					- Patchpanels zu Switches und anderen Geräten wie Accesspoints verkabeln.<br />
+					- verbindung herstellen zu den vorhandenen Outletdosen (wen notwendig direkt brauchbar)<br />
+			</aside>
+		</section>
+		<!-- sub slide 1 -->
+		<section><img src="assets/Cablemanagement.svg" class="fragment fade-right" style="height: 500px;">
+			<aside class="notes">
+				Start: 00:00:00<br />
+				End: 00:01:00<br />
+				<br />
+				Beispiel Verkabelung:<br />
+				<br />
+					- Von Switch KMT701SW103001 = Rack 1, Raum 103, 001 erster Switch oder erstes vom Gerätetyp.<br />
+					- Über Patchpannel KMT701PP103001 = Rack 1, Raum 103, 001 erstes Patchpanel und erstes Gerät vom Gerätetyp.<br />
+					- Zu Accespoint KMT701AP101001 = Kein Rack, Raum 101, 001 erster Accespoint in dem Raum.<br />
+			</aside>
+		</section>
+	</section>
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Aufgetrene Herausforderungen -->
+<!-- ---------------------------------------------------------------------------------------- -->
+	<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
+		<h2 style="font-size: 45px;">Aufgetrene Herausforderungen</h2>
+		<aside class="notes">
+			Start: 00:00:00<br />
+			End: 00:01:00<br />
+			<br />
+		</aside>
+	</section>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- page Fragen? -->
+<!-- ---------------------------------------------------------------------------------------- -->
+	<section data-background-gradient="radial-gradient(#283b95, #17b2c3)">
+		<h2 style="font-size: 45px;">Fragen?</h2>
+		<aside class="notes">
+			Start: 00:00:00<br />
+			End: 00:01:00<br />
+			<br />
+		</aside>
+	</section>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- reveal end -->
+<!-- ---------------------------------------------------------------------------------------- -->
 		</div>
+	</div>
+
+<!-- ---------------------------------------------------------------------------------------- -->
+<!-- scripts -->
+<!-- ---------------------------------------------------------------------------------------- -->
+
 
 		<script src="dist/reveal.js"></script>
 		<script src="plugin/notes/notes.js"></script>
 		<script src="plugin/markdown/markdown.js"></script>
 		<script src="plugin/highlight/highlight.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
 		<script>
 			  Reveal.initialize({
             hash: true,
             plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
         });
-
-        // Fullscreen function
-        function openFullscreen(img) {
-            // Check if the document is in fullscreen mode
-            if (img.requestFullscreen) {
-                img.requestFullscreen();
-            } else if (img.mozRequestFullScreen) { // Firefox
-                img.mozRequestFullScreen();
-            } else if (img.webkitRequestFullscreen) { // Chrome, Safari, and Opera
-                img.webkitRequestFullscreen();
-            } else if (img.msRequestFullscreen) { // IE/Edge
-                img.msRequestFullscreen();
-            }
-        }
 		</script>
 	</body>
 </html>
