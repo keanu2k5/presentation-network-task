@@ -59,9 +59,7 @@
 			<br />
 			- Netzwerk eingerichtet basierend auf Bauplan.<br />
 			- Selbst erstelltes Namenskonzept für Räume und deren Geräte erstellt.<br />
-			- minimal 1 Outlet-Dose mit zwei Steckplätzen pro Raum installiert,  wen mehr nötig wären wie für z.b ein Wohnzimmer kann man optimieren.<br />
 			- Dokumentation im Netbox (Gerätepositionen, IPs).<br />
-			- Ich habe in meiner Umgebung Zwei Racks mit Switches, Patchpanels und Routers.<br />
         </aside>
     </section>
     
@@ -95,15 +93,7 @@
 				Start: 00:00:00<br />
 				End: 00:01:00<br />
 				<br />
-				Ich habe die Ubiquiti UniFi UAP-AC-M-PRO Access Points verwendet, um eine flächendeckende und stabile WLAN-Abdeckung zu gewährleisten. Diese Accesspoints sind für Innen- und Außeneinsatz geeignet<br />
-				<br />
-				Technische Details:<br />
-				<br />
-				Dual-Band: Unterstützt 2,4 GHz als auch 5 GHz Frequenzbänder für bessere Lastverteilung und schnellere Verbindungen<br />
-				<br />
-				Max. Datenrate: Bis zu 1300 Mbit/s
-				<br />
-				Reichweite: 183 Meter
+				(Accespoint) Ich habe die Ubiquiti UniFi Access Points verwendet, um eine flächendeckende und stabile WLAN-Abdeckung zu gewährleisten. Diese Accesspoints sind für Innen- und Außeneinsatz geeignet<br />
 				<br />
 			</aside>
 		</section>
@@ -113,19 +103,7 @@
 				Start: 00:00:00<br />
 				End: 00:01:00<br />
 				<br />
-				Der Ubiquiti USW-Pro-48-POE ist ein leistungsstarker, Layer-2-Switch mit umfangreichen Power-over-Ethernet (PoE) Funktionen, der sich ideal für den Einsatz in mittelgroßen bis großen Netzwerken eignet.
-				<br />
-				Technische Details:<br />
-				<br />
-				48 Gigabit-Ethernet-Ports: Ideal für den Anschluss vieler Geräte.<br />
-				<br/>
-				40 PoE+ Ports: Liefert bis zu 30Watt pro Port, um Access Points, Kameras und andere Geräte mit Strom zu versorgen.<br />
-				<br />
-				8 PoE++ Ports: Unterstützt Geräte mit höherem Strombedarf (bis zu 60Watt).<br />
-				<br />
-				2 SFP+ Ports: 10 Gigabit pro Sekunde für Glasfaser-Uplinks oder Verbindungen zu anderen Switches.<br />
-				<br />
-				Lüfterloses Design: Leise Kühlung im Betrieb.<br />
+				(Switch) Der Ubiquiti USW-Pro-48-POE ist ein leistungsstarker Layer-2-Switch mit umfangreichen Funktionen, der sich ideal für den Einsatz in mittelgroßen bis großen Netzwerken eignet.
 				<br />
 			</aside>
 		</section>
@@ -135,17 +113,7 @@
 				Start: 00:00:00<br />
 				End: 00:01:00<br />
 				<br />
-				Das Dätwyler Patchpanel 24 Port ist ein hochwertiges Patchpanel, häufig in Serverräumen oder Rechenzentren verwendet, um Netzwerkkabel sauber zu organisieren und Verbindungen zu Switches oder anderen Netzwerkgeräten herzustellen. Alternative Patchbox.<br />
-				<br />
-				Technische Details:<br />
-				<br />
-				24 Ports: Unterstützt bis zu 24 Netzwerkverbindungen.<br />
-				<br/>
-				Kompatibilität: Geeignet für CAT5e, CAT6 oder CAT6a Kupferkabel.<br />
-				<br />
-				19-Zoll-Rackmontage, ist = die Standardgröße für eine einfache Installation in Racks.<br />
-				<br />
-				Das Robuste Metallgehäuse, bietet Langlebigkeit und Stabilität.<br/>
+				(Patchpanel) Das Dätwyler Patchpanel 24 Port ist ein hochwertiges Patchpanel, häufig in Serverräumen oder Rechenzentren verwendet, um Netzwerkkabel sauber zu organisieren und Verbindungen zu Switches oder anderen Netzwerkgeräten herzustellen.<br />
 				<br />
 			</aside>
 		</section>
@@ -155,18 +123,9 @@
 				Start: 00:00:00<br />
 				End: 00:01:00<br />
 				<br />
-				Die Ubiquiti UniFi Dream Machine Pro (UDM-Pro) ist eine leistungsstarke All-in-One-Netzwerklösung für mittelgroße bis große Netzwerke, die als Router, Switch, Firewall und Controller dient.<br />
+				(Firewall) Die Ubiquiti UniFi Dream Machine Pro (UDM-Pro) ist eine leistungsstarke All-in-One-Netzwerklösung für mittelgroße bis große Netzwerke, die als Router, Switch, Firewall und Controller dient.<br />
 				<br />
-				Technische Details:<br />
-				<br />
-				8-Port Switch: 8 Gigabit-Ethernet-Ports mit Layer-3-Funktionalität.<br />
-				<br/>
-				WAN-Konnektivität:<br />
-				<br />
-				UniFi Controller: Zentrale Verwaltung von Geräten<br />
-				<br />
-				VPN: Unterstützt Site-to-Site und Remote Access VPNs.
-				<br />
+				Diese Geräte müssen alle irgendwo hin eingebaut werden, kommen wir also direkt zu dem Rack.
 			</aside>
 		</section>
 	</section>
@@ -204,45 +163,6 @@
 			</aside>
 		</section>
 	</section>
-<!-- ---------------------------------------------------------------------------------------- -->
-<!-- page Netbox Dokumentation -->
-<!-- ---------------------------------------------------------------------------------------- -->
-	<section data-background-gradient="linear-gradient(to bottom, #283b95, #17b2c3)">
-		<h2 style="font-size: 45px;">Netbox Dokumentation</h2>
-		<aside class="notes">
-			Start: 00:00:00<br />
-			End: 00:01:00<br />
-			<br />
-		</aside>
-		<!-- sub slide 1 -->
-		<section>
-			<img src="assets/Netbox Side.png">
-			<aside class="notes">
-				Start: 00:00:00<br />
-				End: 00:01:00<br />
-				<br />
-				- Sites<br />
-					- Erstellen.
-					- Hauptseite, alles andere kommt dannach.
-				<br />
-				- Devices<br />
-					- Erstellen.
-					- Zuweisen (IP, Location).
-					- Verbinden per Kabel (z.b Accesspoint zu Switch).
-				<br />
-				- Locations<br />
-					- Erstellen anhand von Bauplan Raumkonzept (z.b Stockwerk 2, Raumnummer 4 = 204).
-					- Wen mehrere Geräte dann 204.01, 204.02 usw.
-					- Locations werden dann übersichlich sein.
-					<br />
-				- Racks<br />
-					- Erstellen eigener Racks inkl Geräte.
-					- Main Rack?.
-					<br />
-			</aside>
-		</section>
-	</section>
-
 <!-- ---------------------------------------------------------------------------------------- -->
 <!-- page Wlan und Subneting -->
 <!-- ---------------------------------------------------------------------------------------- -->
@@ -293,6 +213,8 @@
 				<br />
 				Verkabelung:
 					- Baum Topologie <br />
+					- Alles führt zu dem Hauptrack.<br />
+					- Router hat internet anschluss von ausen (extern).<br />
 					- Switches verkabeln mit Router.<br />
 					- Patchpanels zu Switches und anderen Geräten wie Accesspoints verkabeln.<br />
 					- verbindung herstellen zu den vorhandenen Outletdosen (wen notwendig direkt brauchbar)<br />
@@ -306,8 +228,9 @@
 				<br />
 				Beispiel Verkabelung:<br />
 				<br />
-					- Von Switch KMT701SW103001 = Rack 1, Raum 103, 001 erster Switch oder erstes vom Gerätetyp.<br />
-					- Über Patchpannel KMT701PP103001 = Rack 1, Raum 103, 001 erstes Patchpanel und erstes Gerät vom Gerätetyp.<br />
+					- Erklärung KMT701 = Name der Site<br />
+					- Von Switch KMT701SW103001 = Raum 103 (Rack 1), 001 erster Switch oder erstes vom Gerätetyp.<br />
+					- Über Patchpannel KMT701PP103001 = Raum 103 (Rack 1), 001 erstes Patchpanel und erstes Gerät vom Gerätetyp.<br />
 					- Zu Accespoint KMT701AP101001 = Kein Rack, Raum 101, 001 erster Accespoint in dem Raum.<br />
 			</aside>
 		</section>
@@ -321,6 +244,14 @@
 			Start: 00:00:00<br />
 			End: 00:01:00<br />
 			<br />
+			- Bauplan war einfach<br />
+			<br />
+			- Das ganze anzufangen (Netbox), planung<br />
+			<br />
+			- IP Konzept Subnetting<br />
+			<br />
+			- Vortrag mit Reveal.js<br />
+			<br />
 		</aside>
 	</section>
 
@@ -332,6 +263,8 @@
 		<aside class="notes">
 			Start: 00:00:00<br />
 			End: 00:01:00<br />
+			<br />
+			Nach fragen verabschieden<br />
 			<br />
 		</aside>
 	</section>
